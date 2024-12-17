@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rock paper scissors</title>
+  </head>
+  <body>
+    <p>
+      ROCK, PAPER, SCISSORS
+    </p>
+    
+    <button onclick="
+      const rnum = Math.random();
+
+      let compMove = '';
+
+      if ( rnum >= 0 && rnum < 1 / 3) {
+        compMove = 'rock';
+      } else if ( rnum >= 1/3 && rnum < 2 / 3 ) {
+        compMove = 'paper';
+      } else if ( rnum >= 2 / 3 && rnum < 1 ) {
+        compMove = 'scissors';
+      }
+
+
+      let result = '';
+
+      if ( compMove === 'rock' ) {
+        result = 'tie.';
+      } else if ( compMove === 'paper' ) {
+        result = 'you lose.';
+      } else if ( compMove === 'scissors' ) {
+        result = 'you win!';
+      }
+        alert( `You picked rock. Computer picked ${compMove}. ${result}` );
+
+    ">rock</button>
+
+    <button onclick="
+
+    const rnum = Math.random();
+
+    let compMove = '';
+
+    if ( rnum >= 0 && rnum < 1 / 3) {
+      compMove = 'rock';
+    } else if ( rnum >= 1/3 && rnum < 2 / 3 ) {
+      compMove = 'paper';
+    } else if ( rnum >= 2 / 3 && rnum < 1 ) {
+      compMove = 'scissors';
+    }
+
+
+    let result = '';
+
+    if ( compMove === 'rock' ) {
+      result = ' You win!';
+    } else if ( compMove === 'paper' ) {
+      result = ' Tie.';
+    } else if ( compMove === 'scissors' ) {
+      result = 'you lose.';
+    }
+      alert( `You picked paper. Computer picked ${compMove}. ${result}` );
+
+    ">paper</button>
+
+    <button onclick="
+    
+
+    const rnum = Math.random();
+
+    let compMove = '';
+
+    if ( rnum >= 0 && rnum < 1 / 3) {
+      compMove = 'rock';
+    } else if ( rnum >= 1/3 && rnum < 2 / 3 ) {
+      compMove = 'paper';
+    } else if ( rnum >= 2 / 3 && rnum < 1 ) {
+      compMove = 'scissors';
+    }
+
+
+    let result = '';
+
+    if ( compMove === 'rock' ) {
+      result = ' You lose.';
+    } else if ( compMove === 'paper' ) {
+      result = ' You win!';
+    } else if ( compMove === 'scissors' ) {
+      result = 'Tie.';
+    }
+      alert( `You picked scissors. Computer picked ${compMove}. ${result}` );
+
+    ">scissors</button>
+
+
+    <script>
+
+    </script>
+  </body>
+
+</html>
